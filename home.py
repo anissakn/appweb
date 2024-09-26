@@ -21,6 +21,6 @@ st.sidebar.title("Anissa Kone")
 st.sidebar.video("https://www.youtube.com/watch?v=SALF5tOCHLo")
 
 # select bar
-student_grad = st.selectbox("Sélectionnez votre niveau d'étude", [Bac+2],[Bac+3],[Bac+5])
+student_grad = st.selectbox("Sélectionnez votre niveau d'étude", ["Bac+2"],["Bac+3"],["Bac+5"])
 
 age = st.select_slider("Quel est votre âge ?", range(0,99))
