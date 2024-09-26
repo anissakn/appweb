@@ -8,7 +8,7 @@ user_input = st.text_input("Veuillez entrer une description de l'image que vous 
 st.write(user_input)
 
 # sidebar
-st.sidebar.text_input("Veuillez entrer la clé OpenIA")
+client = st.sidebar.text_input("Veuillez entrer la clé OpenIA")
 
 # OpenAI pour générer des images
 from openai import OpenAI
