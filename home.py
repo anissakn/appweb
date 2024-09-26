@@ -10,3 +10,6 @@ st.write("Ceci est un formulaire de contact")
 user_input = st.text_input("Tapez votre texte :")
 
 st.write(user_input)
+
+# Image
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMZFucLMvnC70v26VRtwnsv73EX8FpKxCqA&s")
