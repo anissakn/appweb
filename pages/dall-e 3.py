@@ -17,11 +17,6 @@ from openai import OpenAI
 client = OpenAI(api_key=OpenAIKEY)
 
 
-# Testez ici plusieurs variation du prompte
-prompt = "A cute baby sea otter"
-
-
-
 image = client.images.generate(
     model="dall-e-2",
     prompt=prompt,
