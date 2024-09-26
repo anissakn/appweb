@@ -18,12 +18,16 @@ client = OpenAI(api_key=openai_key)
 
 
 
-image = client.images.generate(
-    model="dall-e-2",
-    prompt=openai_key,
-    size="512x512",
-    quality="standard",
-)
-
-image_url = image.data[0].url
-print(image_url)
+try:
+    image = client.images.generate(
+        model="dall-e-2",
+        prompt=user_input,
+        size="512x512",
+        quality="standard",
+        n=1,
+    )
+    
+    image_url = image.data[0].url
+    st.image(image_url)
+except:
+    pass
