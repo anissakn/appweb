@@ -14,8 +14,11 @@ st.sidebar.text_input("Veuillez entrer la clé OpenIA")
 from openai import OpenAI
 
 
-client = OpenAI(api_key="sk-6uxlenvrwsRO0NlIgqhrg2B-avWNwVlPV8MgbU-QSHT3BlbkFJSc_Lmu6ZS06yDsSmP4kvVEd42Ds95-CXp726oavJMA")
+client = OpenAI(api_key=OpenAIKEY)
 
+
+# Testez ici plusieurs variation du prompte
+prompt = "A cute baby sea otter"
 
 
 
