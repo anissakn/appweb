@@ -17,12 +17,12 @@ from openai import OpenAI
 client = OpenAI(api_key=openai_key)
 
 
+
 image = client.images.generate(
     model="dall-e-2",
-    prompt=user_input,
+    prompt=openai_key,
     size="512x512",
     quality="standard",
-    n=1,
 )
 
 image_url = image.data[0].url
