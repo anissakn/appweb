@@ -2,5 +2,7 @@ import streamlit as st
 
 st.title("Dall-e 3")
 
-st.input_text("Donnez votre nom, prénom et ville de naissance")
+# Champs de saisie
+user_input = st.text_input("Donnez votre nom et prénom :")
 
+st.write(user_input)
