@@ -14,12 +14,12 @@ client = st.sidebar.text_input("Veuillez entrer la clé OpenIA")
 from openai import OpenAI
 
 
-client = OpenAI(api_key=OpenAIKEY)
+client = OpenAI(api_key=client)
 
 
 image = client.images.generate(
     model="dall-e-2",
-    prompt=prompt,
+    prompt=user_input,
     size="512x512",
     quality="standard",
     n=1,
